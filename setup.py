@@ -12,6 +12,7 @@ setup(name='plone.synchronize',
       classifiers=[
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
+        "License :: OSI Approved :: BSD License",
         ],
       keywords='synchronized lock decorator',
       author='Martin Aspeli',
