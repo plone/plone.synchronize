@@ -8,16 +8,16 @@ It can be used like this::
 
     from threading import Lock
     from plone.synchronize import synchronized
-    
+
     class StupidStack(object):
-    
+
         _elements = [] # not thread safe
         _lock = Lock()
-        
+
         @synchronized(_lock)
         def push(self, item):
             self._elements.append(item)
-        
+
         @synchronized(_lock)
         def pop(self):
             last = self._elements[-1]
