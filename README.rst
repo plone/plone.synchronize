@@ -1,6 +1,9 @@
 Introduction
 ============
 
+.. image:: https://secure.travis-ci.org/pyrenees/plone.synchronize.png
+   :target: http://travis-ci.org/pyrenees/plone.synchronize
+
 This package provides a simple decorator to help synchronize methods across
 threads, to avoid problems of concurrent access.
 
