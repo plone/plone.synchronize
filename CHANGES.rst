@@ -4,8 +4,8 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Test Python 3 compatibility.
+  [datakurre]
 
 1.0.1 - 2011-05-20
 ------------------

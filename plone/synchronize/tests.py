@@ -1,11 +1,11 @@
+from plone.synchronize import synchronized
+from threading import Lock
 import unittest
 
-from threading import Lock
-from plone.synchronize import synchronized
 
 class StupidStack(object):
 
-    _elements = [] # not thread safe
+    _elements = []  # not thread safe
     _lock = Lock()
 
     @synchronized(_lock)
@@ -21,10 +21,12 @@ class StupidStack(object):
 _global_lock = Lock()
 _global_list = []
 
+
 @synchronized(_global_lock)
 def reverse_global_list():
     global _global_list
     _global_list.reverse()
+
 
 class Test(unittest.TestCase):
 
@@ -55,16 +57,18 @@ class Test(unittest.TestCase):
 
     def test_function(self):
         global _global_list
-        _global_list.extend([1,2,3])
+        _global_list.extend([1, 2, 3])
 
         reverse_global_list()
         reverse_global_list()
         reverse_global_list()
 
-        self.assertEquals([3,2,1], _global_list)
+        self.assertEquals([3, 2, 1], _global_list)
+
 
 def test_suite():
     return unittest.defaultTestLoader.loadTestsFromName(__name__)
+
 
 if __name__ == '__main__':
     unittest.main(defaultTest='test_suite')
