@@ -4,14 +4,6 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
 - Release it as a wheel as well as an egg.
