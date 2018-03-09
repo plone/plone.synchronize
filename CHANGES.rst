@@ -14,8 +14,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
-
+- Release it as a wheel as well as an egg.
+  [gforcada]
 
 1.0.2 (2016-11-01)
 ------------------
