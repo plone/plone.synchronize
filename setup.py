@@ -9,7 +9,7 @@ setup(
     long_description=(open("README.rst").read() + "\n" +
                       open("CHANGES.rst").read()),
     # Get more strings from
-    # https://pypi.python.org/pypi?%3Aaction=list_classifiers
+    # https://pypi.org/classifiers/
     classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.6",
@@ -21,7 +21,7 @@ setup(
     keywords='synchronized lock decorator',
     author='Martin Aspeli',
     author_email='optilude@gmail.com',
-    url='https://pypi.python.org/pypi/plone.synchronize',
+    url='https://pypi.org/project/plone.synchronize',
     license='BSD',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['plone'],
