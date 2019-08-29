@@ -11,6 +11,7 @@ setup(
     # Get more strings from
     # https://pypi.org/classifiers/
     classifiers=[
+        "Development Status :: 6 - Mature",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.6",
         "Programming Language :: Python :: 2.7",
