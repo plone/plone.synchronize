@@ -36,7 +36,7 @@ class Test(unittest.TestCase):
         shared_stack.push("one")
         item = shared_stack.pop()
 
-        self.assertEquals("one", item)
+        self.assertEqual("one", item)
 
         # raises exception
 
@@ -46,14 +46,14 @@ class Test(unittest.TestCase):
         except IndexError:
             raised = True
 
-        self.failUnless(raised)
+        self.assertTrue(raised)
 
         # should not be dead-locked even after an exception
 
         shared_stack.push("two")
         item = shared_stack.pop()
 
-        self.assertEquals("two", item)
+        self.assertEqual("two", item)
 
     def test_function(self):
         global _global_list
@@ -63,7 +63,7 @@ class Test(unittest.TestCase):
         reverse_global_list()
         reverse_global_list()
 
-        self.assertEquals([3, 2, 1], _global_list)
+        self.assertEqual([3, 2, 1], _global_list)
 
 
 def test_suite():
