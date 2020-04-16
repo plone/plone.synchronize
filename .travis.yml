@@ -3,11 +3,9 @@ python:
 - 2.7
 - 3.5
 - 3.6
-sudo: false
-cache:
-  directories:
-  - eggs
-install:
-- pip install zc.buildout
-- buildout -N -t 3
-script: bin/test
+- 3.7
+- 3.8
+- pypy
+- pypy3
+script:
+- python setup.py test
