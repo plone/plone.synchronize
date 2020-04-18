@@ -38,15 +38,8 @@ class Test(unittest.TestCase):
 
         self.assertEqual("one", item)
 
-        # raises exception
-
-        raised = False
-        try:
+        with self.assertRaises(IndexError):
             shared_stack.pop()
-        except IndexError:
-            raised = True
-
-        self.assertTrue(raised)
 
         # should not be dead-locked even after an exception
 
